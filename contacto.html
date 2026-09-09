@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - Librería</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Librería Duoc</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contacto</h2>
+        <form id="formContacto">
+            <label>Nombre:</label>
+            <input type="text" id="nombreContacto" required>
+            
+            <label>Mensaje (Máximo 500 caracteres):</label>
+            <textarea id="comentario" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="erroresContacto" style="color:red;"></div>
+
+        <section style="margin-top: 30px;">
+            <h3>Video de ayuda</h3>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"></iframe>
+        </section>
+    </main>
+
+    <script src="js/validaciones.js"></script>
+    <script src="js/carrito.js"></script>
+</body>
+</html>

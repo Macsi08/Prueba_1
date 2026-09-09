@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Productos - Librería</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Librería Duoc</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="carrito.html">Carrito (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Catálogo de Productos</h2>
+        <div class="grid-productos">
+            <article class="tarjeta">
+                <img src="img/libro_quimica.jpg" alt="Libro">
+                <h4>Libro de Química</h4>
+                <p>$500</p>
+                <button onclick="agregarAlCarrito('Libro de Química', 500)">Añadir</button>
+            </article>
+            <article class="tarjeta">
+                <img src="img/calculadora.jpg" alt="Calculadora">
+                <h4>Calculadora</h4>
+                <p>$7.000</p>
+                <button onclick="agregarAlCarrito('Calculadora', 7000)">Añadir</button>
+            </article>
+            <article class="tarjeta">
+                <img src="img/estuche_azul.jpg" alt="Estuche">
+                <h4>Estuche Azul</h4>
+                <p>$2.500</p>
+                <button onclick="agregarAlCarrito('Estuche Azul', 2500)">Añadir</button>
+            </article>
+        </div>
+    </main>
+    <script src="js/carrito.js"></script>
+</body>
+</html>
